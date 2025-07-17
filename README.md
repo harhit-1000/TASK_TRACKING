@@ -29,19 +29,8 @@ A full-featured Task Tracking web application built with the **MERN Stack** (Mon
 ---
 
 ## 📦 Folder Structure
-project-root/
-│
-├── backend/ # Express server
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ └── server.js
-│
-├── frontend/ # React application
-│ ├── src/
-│ ├── public/
-│ └── vite.config.js
+
+<pre> task-tracker/ ├── backend/ # Express.js + MongoDB (API) │ ├── controllers/ # Task & auth logic │ ├── models/ # Mongoose schemas │ ├── routes/ # Auth & Task routes │ ├── middleware/ # Auth middleware (JWT) │ ├── .env # Environment variables │ └── server.js # Entry point │ ├── frontend/ # React + Vite app │ ├── src/ │ │ ├── components/ # TaskForm, TaskList, etc. │ │ ├── pages/ # Home, Login, Register │ │ ├── App.jsx │ │ └── main.jsx │ ├── public/ │ └── vite.config.js │ └── README.md </pre>
 
 
 ## ⚙️ Environment Variables
