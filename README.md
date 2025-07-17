@@ -40,13 +40,13 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 FRONTEND_URL=https://task-tracking-uwlh.vercel.app
 
-Frontend .env
+### Frontend .env
 env
 Copy
 Edit
 VITE_API_BASE_URL=task-tracking-delta.vercel.app
 
-🧪 API Endpoints
+### 🧪 API Endpoints
 Auth Routes
 POST /api/auth/register – Register new user
 
@@ -61,7 +61,7 @@ PUT /api/tasks/:id – Update task
 
 DELETE /api/tasks/:id – Delete task
 
-💡 Usage Instructions
+### 💡 Usage Instructions
 
 1. Clone Repo
 bash
@@ -86,14 +86,14 @@ npm install
 npm run dev
 
 
-🧑‍💻 Author
+### 🧑‍💻 Author
 Harshit Kumar
 B.Tech in CSE (AI & ML), Technocrats Institute of Technology
 MERN Developer
 
 
 
-## 📦 Folder Structure
+### 📦 Folder Structure
 
 <details>
 <summary><strong>Click to expand</strong></summary>
