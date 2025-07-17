@@ -30,38 +30,35 @@ A full-featured Task Tracking web application built with the **MERN Stack** (Mon
 
 ## ⚙️ Environment Variables
 
-### 🖥️ Backend `.env`
+### ⚙️ Backend `.env`
 
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-FRONTEND_URL=https://task-tracking-uwlh.vercel.app```
+FRONTEND_URL=https://task-tracking-uwlh.vercel.app
 
-### 🌐 Frontend .env
-env
-Copy
-Edit
+🌐 Frontend .env
+
 VITE_API_BASE_URL=https://task-tracking-delta.vercel.app
 
-## 🧪 API Endpoints
-## 🔐 Auth Routes
+🧪 API Endpoints
+🔐 Auth Routes
 
-```POST /api/auth/register – Register new user
-
+POST /api/auth/register – Register new user
 POST /api/auth/login – Login user
 
+
 📋 Task Routes (Protected)
+
 GET /api/tasks – Get user’s tasks
-
 POST /api/tasks – Create task
-
 PUT /api/tasks/:id – Update task
+DELETE /api/tasks/:id – Delete task
 
-DELETE /api/tasks/:id – Delete task```
 
-## 💡 Usage Instructions
-```1. Clone Repo
+💡 Usage Instructions
+1. Clone Repo
 bash
 Copy
 Edit
@@ -81,36 +78,9 @@ Copy
 Edit
 cd frontend
 npm install
-npm run dev```
+npm run dev
 
-## 🧑‍💻 Author
-```Harshit Kumar
+🧑‍💻 Author
+Harshit Kumar
 B.Tech in CSE (AI & ML), Technocrats Institute of Technology
-MERN Developer```
-
-##📦 Folder Structure
-```
-<details> <summary><strong>Click to expand</strong></summary>
-plaintext
-Copy
-Edit
-task-tracker/
-├── backend/               # Express.js + MongoDB (API)
-│   ├── controllers/       # Task & auth logic
-│   ├── models/            # Mongoose schemas
-│   ├── routes/            # Auth & Task routes
-│   ├── middleware/        # Auth middleware (JWT)
-│   ├── .env               # Environment variables
-│   └── server.js          # Entry point
-│
-├── frontend/              # React + Vite app
-│   ├── src/
-│   │   ├── components/    # TaskForm, TaskList, etc.
-│   │   ├── pages/         # Home, Login, Register
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── public/
-│   └── vite.config.js
-│
-└── README.md
-</details> ```
+MERN Developer
