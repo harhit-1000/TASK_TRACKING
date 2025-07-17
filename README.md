@@ -28,33 +28,6 @@ A full-featured Task Tracking web application built with the **MERN Stack** (Mon
 
 ---
 
-## 📦 Folder Structure
-
-## 📁 Folder Structure
-
-<details>
-<summary><strong>Click to expand</strong></summary>
-
-```plaintext
-task-tracker/
-├── backend/               # Express.js + MongoDB (API)
-│   ├── controllers/       # Task & auth logic
-│   ├── models/            # Mongoose schemas
-│   ├── routes/            # Auth & Task routes
-│   ├── middleware/        # Auth middleware (JWT)
-│   ├── .env               # Environment variables
-│   └── server.js          # Entry point
-│
-├── frontend/              # React + Vite app
-│   ├── src/
-│   │   ├── components/    # TaskForm, TaskList, etc.
-│   │   ├── pages/         # Home, Login, Register
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── public/
-│   └── vite.config.js
-│
-└── README.md
 
 
 
@@ -118,3 +91,30 @@ Harshit Kumar
 B.Tech in CSE (AI & ML), Technocrats Institute of Technology
 MERN Developer
 
+
+
+## 📦 Folder Structure
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+
+```plaintext
+task-tracker/
+├── backend/               # Express.js + MongoDB (API)
+│   ├── controllers/       # Task & auth logic
+│   ├── models/            # Mongoose schemas
+│   ├── routes/            # Auth & Task routes
+│   ├── middleware/        # Auth middleware (JWT)
+│   ├── .env               # Environment variables
+│   └── server.js          # Entry point
+│
+├── frontend/              # React + Vite app
+│   ├── src/
+│   │   ├── components/    # TaskForm, TaskList, etc.
+│   │   ├── pages/         # Home, Login, Register
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── public/
+│   └── vite.config.js
+│
+└── README.md
