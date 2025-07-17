@@ -12,20 +12,23 @@ const initialState = {
 
 const TaskForm = ({ onSuccess }) => {
     const [task, setTask] = useState(initialState);
+    const [showForm, setShowForm] = useState(false);
     const navigate = useNavigate();
     const { id } = useParams();
 
     useEffect(() => {
-        const fetchTask = async () => {
-            try {
-                const res = await axios.get(`/tasks/${id}`);
-                setTask(res.data);
-            } catch (err) {
-                console.error('Failed to fetch task', err);
-            }
-        };
-
-        if (id) fetchTask();
+        if (id) {
+            const fetchTask = async () => {
+                try {
+                    const res = await axios.get(`/tasks/${id}`);
+                    setTask(res.data);
+                    setShowForm(true);
+                } catch (err) {
+                    console.error('Failed to fetch task', err);
+                }
+            };
+            fetchTask();
+        }
     }, [id]);
 
     const handleChange = (e) => {
@@ -35,23 +38,31 @@ const TaskForm = ({ onSuccess }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         try {
             if (id) {
                 await axios.put(`/tasks/${id}`, task);
             } else {
                 await axios.post('/tasks', task);
             }
-
             setTask(initialState);
-
             if (onSuccess) onSuccess();
-
+            setShowForm(false);
             if (id) navigate('/');
         } catch (err) {
             console.error('Error saving task:', err);
         }
     };
+
+    if (!showForm && !id) {
+        return (
+            <button
+                className="bg-blue-600 text-white rounded-md px-6 py-2 font-semibold hover:bg-blue-700 transition w-full"
+                onClick={() => setShowForm(true)}
+            >
+                Add Task
+            </button>
+        );
+    }
 
     return (
         <form
