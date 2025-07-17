@@ -23,98 +23,87 @@ A full-featured Task Tracking web application built with the **MERN Stack** (Mon
 - **Backend**: Node.js, Express.js, MongoDB, Mongoose
 - **Authentication**: JWT, bcrypt
 - **Deployment**:
-  - Frontend: [Vercel](task-tracking-uwlh.vercel.app)
-  - Backend: [Vercel](task-tracking-delta.vercel.app)
+  - Frontend: [Vercel](https://task-tracking-uwlh.vercel.app)
+  - Backend: [Vercel](https://task-tracking-delta.vercel.app)
 
 ---
 
+## ⚙️ Environment Variables
 
+### 🖥️ Backend `.env`
 
-
-### ⚙️ Environment Variables
-
-#### Backend `.env`
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 FRONTEND_URL=https://task-tracking-uwlh.vercel.app
-
-#### Frontend .env
+🌐 Frontend .env
 env
 Copy
 Edit
-VITE_API_BASE_URL=task-tracking-delta.vercel.app
-
+VITE_API_BASE_URL=https://task-tracking-delta.vercel.app
 🧪 API Endpoints
-  Auth Routes
-  POST /api/auth/register – Register new user
-  
-  POST /api/auth/login – Login user
-  
-  Task Routes (Protected)
-  GET /api/tasks – Get user’s tasks
-  
-  POST /api/tasks – Create task
-  
-  PUT /api/tasks/:id – Update task
-  
-  DELETE /api/tasks/:id – Delete task
+🔐 Auth Routes
+POST /api/auth/register – Register new user
+
+POST /api/auth/login – Login user
+
+📋 Task Routes (Protected)
+GET /api/tasks – Get user’s tasks
+
+POST /api/tasks – Create task
+
+PUT /api/tasks/:id – Update task
+
+DELETE /api/tasks/:id – Delete task
 
 💡 Usage Instructions
-
-    1. Clone Repo
-    bash
-    Copy
-    Edit
-    git clone https://github.com/your-username/task-tracker-app.git
-    
-    2. Set up Backend
-    bash
-    Copy
-    Edit
-    cd backend
-    npm install
-    npm run dev
-    
-    3. Set up Frontend
-    bash
-    Copy
-    Edit
-    cd frontend
-    npm install
-    npm run dev
-
-
+1. Clone Repo
+bash
+Copy
+Edit
+git clone https://github.com/your-username/task-tracker-app.git
+2. Set up Backend
+bash
+Copy
+Edit
+cd backend
+npm install
+npm run dev
+3. Set up Frontend
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm run dev
 🧑‍💻 Author
-  Harshit Kumar
-  B.Tech in CSE (AI & ML), Technocrats Institute of Technology
-  MERN Developer
-
-
+Harshit Kumar
+B.Tech in CSE (AI & ML), Technocrats Institute of Technology
+MERN Developer
 
 📦 Folder Structure
-
-  <details>
-  <summary><strong>Click to expand</strong></summary>
-  
-  ```plaintext
-  task-tracker/
-  ├── backend/               # Express.js + MongoDB (API)
-  │   ├── controllers/       # Task & auth logic
-  │   ├── models/            # Mongoose schemas
-  │   ├── routes/            # Auth & Task routes
-  │   ├── middleware/        # Auth middleware (JWT)
-  │   ├── .env               # Environment variables
-  │   └── server.js          # Entry point
-  │
-  ├── frontend/              # React + Vite app
-  │   ├── src/
-  │   │   ├── components/    # TaskForm, TaskList, etc.
-  │   │   ├── pages/         # Home, Login, Register
-  │   │   ├── App.jsx
-  │   │   └── main.jsx
-  │   ├── public/
-  │   └── vite.config.js
-  │
-  └── README.md
+<details> <summary><strong>Click to expand</strong></summary>
+plaintext
+Copy
+Edit
+task-tracker/
+├── backend/               # Express.js + MongoDB (API)
+│   ├── controllers/       # Task & auth logic
+│   ├── models/            # Mongoose schemas
+│   ├── routes/            # Auth & Task routes
+│   ├── middleware/        # Auth middleware (JWT)
+│   ├── .env               # Environment variables
+│   └── server.js          # Entry point
+│
+├── frontend/              # React + Vite app
+│   ├── src/
+│   │   ├── components/    # TaskForm, TaskList, etc.
+│   │   ├── pages/         # Home, Login, Register
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── public/
+│   └── vite.config.js
+│
+└── README.md
+</details> ```
